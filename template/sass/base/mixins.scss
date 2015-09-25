@@ -49,15 +49,26 @@
 }
 
 @mixin vhcenter-abs($width, $height) {
-	width: $width;
-	height: $height;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
+    width: $width;
+    height: $height;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 @mixin image-process() {
-	-webkit-filter: grayscale(0%) blur(0px) brightness(100%) contrast(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(1) sepia(0%);
+    -webkit-filter: grayscale(0%) blur(0px) brightness(100%) contrast(100%) hue-rotate(0deg) invert(0%) opacity(100%) saturate(1) sepia(0%);
+}
+
+@mixin fix-blink() {
+    -webkit-transform-style: preserve-3d;
+    -webkit-backface-visibility: hidden;
+}
+
+@mixin IOS-font-adjust() {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
