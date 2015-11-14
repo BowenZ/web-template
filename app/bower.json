@@ -17,5 +17,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "devDependencies": {
+    "bootstrap": "~3.3.5",
+    "angular-resource": "~1.4.7",
+    "Swiper": "swiper#~3.2.0"
+  }
 }
